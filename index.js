@@ -24,7 +24,7 @@ module.exports = function sanitizer_plugin(md, options) {
 
 
   var allowedTags = [ 'a', 'b', 'blockquote', 'code', 'em', 'h1', 'h2', 'h3', 'h4', 'h5',
-                     'h6', 'li', 'ol', 'p', 'pre', 's', 'sub', 'sup', 'strong', 'ul' ];
+                     'h6', 'li', 'ol', 'p', 'pre', 's', 'sub', 'sup', 'strong', 'ul', 'iframe' ];
   var openTagCount = new Array(allowedTags.length);
   var removeTag = new Array(allowedTags.length);
   for (j = 0; j < allowedTags.length; j++) { openTagCount[j] = 0; }
